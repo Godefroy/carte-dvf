@@ -28,7 +28,9 @@ export async function fetchAndSaveCSV(year: number, departement: string) {
 promiseSerial(
   flatten(
     years.map(year =>
-      departements.map(departement => () => fetchAndSaveCSV(year, departement))
+      departements.map(departement => () =>
+        fetchAndSaveCSV(year, departement.code)
+      )
     )
   )
 )
