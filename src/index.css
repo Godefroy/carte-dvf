@@ -12,3 +12,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Fix missing scroll in Blueprint select */
+.bp3-select-popover .bp3-menu {
+  max-width: 400px;
+  max-height: 300px;
+  overflow: auto;
+  padding: 0;
+}

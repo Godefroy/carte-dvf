@@ -1,0 +1,19 @@
+{
+  "extends": ["tslint:latest", "tslint-config-prettier"],
+  "rulesDirectory": ["node_modules/tslint-strict-null-checks/rules", "tslint-plugin-prettier"],
+  "rules": {
+    "quotemark": [true, "single", "jsx-double"],
+    "semicolon": [true, "never"],
+    "object-literal-sort-keys": false,
+    "trailing-comma": [true, { "multiline": "never", "singleline": "never" }],
+    "no-console": [true, "debug", "info", "time", "timeEnd"],
+    "curly": false,
+    "ordered-imports": [false],
+    "no-uninitialized": [true, "properties"],
+    "no-submodule-imports": false,
+    "max-classes-per-file": false,
+    "max-line-length": [false],
+    "indent": [true, "spaces", 2],
+    "no-unused-expression": [true, "allow-fast-null-checks"]
+  }
+}

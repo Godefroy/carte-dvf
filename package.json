@@ -1,22 +1,31 @@
 {
-  "name": "test-react",
+  "name": "carte-dvf",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@blueprintjs/core": "^3.15.1",
+    "@blueprintjs/icons": "^3.8.0",
+    "@blueprintjs/select": "^3.8.0",
     "@types/jest": "24.0.11",
     "@types/node": "11.13.8",
     "@types/react": "16.8.14",
     "@types/react-dom": "16.8.4",
+    "axios": "^0.18.0",
+    "csvtojson": "^2.0.8",
+    "normalize.css": "^8.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-map-gl": "^4.1.2",
     "react-scripts": "3.0.0",
+    "styled-components": "^4.2.0",
     "typescript": "3.4.5"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "fetch": "ts-node src/scripts/fetch.ts"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -32,5 +41,14 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/react-map-gl": "^4.1.1",
+    "@types/styled-components": "^4.1.14",
+    "ts-node": "^8.1.0",
+    "tslint": "^5.16.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-plugin-prettier": "^2.0.1",
+    "tslint-strict-null-checks": "^1.0.1"
   }
 }
