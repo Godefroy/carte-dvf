@@ -5,14 +5,22 @@ import { IData } from '../config/interfaces'
 import ConfigForm from './ConfigForm'
 import CustomMap from './CustomMap'
 
-const Title = styled.h1`
+const Header = styled.div`
   position: absolute;
   z-index: 10;
   top: 2em;
   left: 2em;
   margin: 0;
-  font-size: 1.5em;
   color: #fff;
+  text-shadow: 0 0 16px #000, 5px 5px 16px #000, 5px -5px 16px #000,
+    -5px 5px 16px #000, -5px -5px 16px #000;
+  h1 {
+    font-size: 1.5em;
+  }
+  a {
+    color: #fff;
+    text-decoration: underline;
+  }
 `
 
 const App: React.FC = () => {
@@ -25,7 +33,11 @@ const App: React.FC = () => {
 
   return (
     <>
-      <Title>Carte « Demande de valeurs foncières »</Title>
+      <Header>
+        <h1>Carte « Demande de valeurs foncières »</h1>
+        <a href="https://cadastre.data.gouv.fr/dvf">Base de données</a> •{' '}
+        <a href="https://github.com/Godefroy/carte-dvf">Sources</a>
+      </Header>
       <ConfigForm onSubmit={handleSubmit} />
       <CustomMap data={data} />
     </>
