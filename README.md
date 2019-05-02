@@ -1,6 +1,10 @@
 # Carte de valeurs foncières
 
-Voir https://cadastre.data.gouv.fr/dvf
+Consultez les ventes foncières réalisées au cours des cinq dernières années
+
+Demo : https://carte-dvf.netlify.com/
+
+Base de données : https://cadastre.data.gouv.fr/dvf
 
 ---
 
